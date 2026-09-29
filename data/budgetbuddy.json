@@ -1,0 +1,13 @@
+{
+  "account_name": "My Allowance",
+  "starting_balance": 50.0,
+  "transactions": [
+    {"id": 1, "description": "Bus pass", "amount": -2.5, "category": "transport"},
+    {"id": 2, "description": "Allowance", "amount": 20.0, "category": "income"},
+    {"id": 3, "description": "Lunch", "amount": -6.75, "category": "food"},
+    {"id": 4, "description": "Movie ticket", "amount": -12.0, "category": "fun"},
+    {"id": 5, "description": "Snack", "amount": -3.25, "category": "food"},
+    {"id": 6, "description": "Birthday gift", "amount": 15.0, "category": "income"}
+  ],
+  "history": [50.0, 45.0, 60.0]
+}
