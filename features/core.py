@@ -25,7 +25,6 @@ def transactions_by_category(transactions, category):
     return [t for t in transactions if t["category"] == category]
 
 
-"""count_by_category() is a function that counts how many times a specific category appears. Essentially keeping track of how many of each category is present."""
 def count_by_category(transactions):
     counts = {}
     for t in transactions:
