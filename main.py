@@ -49,7 +49,11 @@ def main():
             for t in matches:
                 print("- " + t["description"])
         elif choice == "5":
-            print(core.last_transaction(core.get_transactions(data))["description"])
+            last = core.last_transaction(core.get_transactions(data))
+            if last is None:
+                print("No transactions yet.")
+            else:
+                print(last["description"])
         elif choice == "6":
             print(core.count_by_category(core.get_transactions(data)))
         elif choice == "7":
