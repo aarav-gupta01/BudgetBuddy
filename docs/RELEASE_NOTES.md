@@ -16,3 +16,6 @@ release goes first. Keep each entry to what a user would notice.
 ```
 
 <!-- Your first real release note goes below this line. -->
+## v1.0 - 2026-10-11
+### Added
+- Implemented category totals for spending and income, with tests for sample transactions and an empty account ([#3](https://github.com/aarav-gupta01/BudgetBuddy/issues/3)).
