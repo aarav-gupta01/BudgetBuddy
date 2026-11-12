@@ -12,3 +12,14 @@ def category_report(data):
         flow = t['amount']
         report[t['category']] = report.get(t['category'], 0) + flow
     return report
+
+
+def average_balance(data):
+    """Average of the past balances in data['history'].
+
+    Returns a float rounded to one decimal place. An empty history returns 0.0.
+    """
+    history = data["history"]
+    if not history:
+        return 0.0
+    return round(sum(history) / len(history), 1)

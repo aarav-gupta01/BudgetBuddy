@@ -1,5 +1,7 @@
 """Core BudgetBuddy logic: transactions, balance, and small helpers."""
 
+import csv
+
 
 def get_transactions(data):
     return data["transactions"]
@@ -39,7 +41,9 @@ def count_by_category(transactions):
 
 
 def last_transaction(transactions):
-    return transactions[len(transactions) - 1]
+    if not transactions:
+        return None
+    return transactions[-1]
 
 
 def total_spent(transactions):
@@ -50,3 +54,11 @@ def average_transaction(transactions):
     if not transactions:
         return 0
     return round(sum(t["amount"] for t in transactions) / len(transactions), 2)
+
+
+def export_to_csv(transactions, path):
+    with open(path, "w", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["id", "description", "amount", "category"])
+        for t in transactions:
+            writer.writerow([t["id"], t["description"], t["amount"], t["category"]])

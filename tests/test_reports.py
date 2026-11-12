@@ -24,3 +24,11 @@ class TestReports(unittest.TestCase):
         }
 
         self.assertEqual(result, correct)
+
+    def test_average_balance_empty_history(self):
+        data = {"history": []}
+        self.assertEqual(reports.average_balance(data), 0.0)
+
+    def test_average_balance(self):
+        data = {"history": [10.0, 20.0, 30.0]}
+        self.assertEqual(reports.average_balance(data), 20.0)
