@@ -4,6 +4,12 @@ A small spending/allowance tracker you run in the terminal. Add transactions,
 list them, and see your balance. This is your squad's starting product for
 Elite 101 - you'll grow it one ticket at a time.
 
+## What it does
+
+Show your balance, list/add transactions, filter by category, see your last
+transaction, category breakdown, spending summary, account summary, and
+export your transactions to `transaction.csv` (menu option 9).
+
 ## Run it
 
 ```bash
@@ -23,7 +29,7 @@ python -m unittest
 | `main.py` | The menu loop you interact with |
 | `storage.py` | Loads and saves the JSON data file |
 | `features/core.py` | The transactions, the balance, and small helpers |
-| `features/reports.py` | Summary reports (half-built - finish it via a ticket) |
+| `features/reports.py` | Summary reports: account summary, category totals, average balance |
 | `data/budgetbuddy.json` | The transaction history and starting balance |
 | `tests/test_core.py` | Example tests to copy from |
 
