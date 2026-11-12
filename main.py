@@ -18,6 +18,7 @@ def show_menu():
     print("6) Category breakdown")
     print("7) Spending summary")
     print("8) Account summary")
+    print("9) Export to CSV")
     print("0) Quit")
 
 
@@ -58,6 +59,9 @@ def main():
                   " transactions (avg $" + str(core.average_transaction(txns)) + ").")
         elif choice == "8":
             print(reports.account_summary(data))
+        elif choice == "9":
+            core.export_to_csv(core.get_transactions(data), "transaction.csv")
+            print("Saved to transaction.csv")
         else:
             print("Please pick a number from the menu.")
 

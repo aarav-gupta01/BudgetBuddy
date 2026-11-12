@@ -16,3 +16,4 @@ release goes first. Keep each entry to what a user would notice.
 ```
 
 <!-- Your first real release note goes below this line. -->
+- Added menu option 9: export transactions to transcation.csv.
