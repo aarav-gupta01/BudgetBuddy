@@ -31,7 +31,7 @@ python -m unittest
 
 <!-- Add yourself here on your Git lesson: - Your Name (role) -->
 - Aarav Gupta (Building BudgetBuddy)
-- (your squad will add themselves here)
+- Kaylyn Lopez (Building BudgetBuddy)
 
 ## Where to start
 
